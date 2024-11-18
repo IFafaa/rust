@@ -11,11 +11,12 @@ mod variable_let;
 
 mod exercises {
     pub mod enter_string;
+    pub mod sum_two_numbers;
 }
 
 static EXERCISES: [&str; 5] = [
     "Enter your name",
-    "Doing (don't choose)",
+    "Sum two numbers",
     "Doing (don't choose)",
     "Doing (don't choose)",
     "Doing (don't choose)",
@@ -47,5 +48,8 @@ fn main() {
 
     if choose_input == "1" {
         exercises::enter_string::name_input()
+    }
+    if choose_input == "2" {
+        exercises::sum_two_numbers::sum_two_numbers()
     }
 }

@@ -12,6 +12,7 @@ mod variable_let;
 mod exercises {
     pub mod check_parity;
     pub mod enter_string;
+    pub mod add_user;
     pub mod sum_two_numbers;
 }
 
@@ -19,7 +20,7 @@ static EXERCISES: [&str; 5] = [
     "Enter your name",
     "Sum two numbers",
     "Check Parity",
-    "Doing (don't choose)",
+    "Add User",
     "Doing (don't choose)",
 ];
 
@@ -55,5 +56,8 @@ fn main() {
     }
     if choose_input == "3" {
         exercises::check_parity::check_parity();
+    }
+    if choose_input == "4" {
+        exercises::add_user::add_user();
     }
 }

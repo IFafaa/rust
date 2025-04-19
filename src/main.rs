@@ -10,6 +10,7 @@ mod variable_const;
 mod variable_let;
 
 mod exercises {
+    pub mod check_parity;
     pub mod enter_string;
     pub mod sum_two_numbers;
 }
@@ -17,7 +18,7 @@ mod exercises {
 static EXERCISES: [&str; 5] = [
     "Enter your name",
     "Sum two numbers",
-    "Doing (don't choose)",
+    "Check Parity",
     "Doing (don't choose)",
     "Doing (don't choose)",
 ];
@@ -51,5 +52,8 @@ fn main() {
     }
     if choose_input == "2" {
         exercises::sum_two_numbers::sum_two_numbers()
+    }
+    if choose_input == "3" {
+        exercises::check_parity::check_parity();
     }
 }

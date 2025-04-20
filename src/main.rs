@@ -14,13 +14,19 @@ mod exercises {
     pub mod enter_string;
     pub mod add_user;
     pub mod sum_two_numbers;
+    pub mod bank_account;
 }
 
-static EXERCISES: [&str; 5] = [
+static EXERCISES: [&str; 10] = [
     "Enter your name",
     "Sum two numbers",
     "Check Parity",
     "Add User",
+    "Bank Account",
+    "Doing (don't choose)",
+    "Doing (don't choose)",
+    "Doing (don't choose)",
+    "Doing (don't choose)",
     "Doing (don't choose)",
 ];
 
@@ -60,4 +66,10 @@ fn main() {
     if choose_input == "4" {
         exercises::add_user::add_user();
     }
+    if choose_input == "5" {
+        exercises::bank_account::bank_account();
+    } else {
+        println!("Invalid exercise number!");
+    }
+
 }

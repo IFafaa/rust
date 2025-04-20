@@ -15,6 +15,7 @@ mod exercises {
     pub mod add_user;
     pub mod sum_two_numbers;
     pub mod bank_account;
+    pub mod vehicles;
 }
 
 static EXERCISES: [&str; 10] = [
@@ -23,7 +24,7 @@ static EXERCISES: [&str; 10] = [
     "Check Parity",
     "Add User",
     "Bank Account",
-    "Doing (don't choose)",
+    "Vehicles",
     "Doing (don't choose)",
     "Doing (don't choose)",
     "Doing (don't choose)",
@@ -68,7 +69,11 @@ fn main() {
     }
     if choose_input == "5" {
         exercises::bank_account::bank_account();
-    } else {
+    } 
+    if choose_input == "6" {
+        exercises::vehicles::vehicles();
+    }
+    else {
         println!("Invalid exercise number!");
     }
 

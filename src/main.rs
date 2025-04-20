@@ -10,11 +10,11 @@ mod variable_const;
 mod variable_let;
 
 mod exercises {
+    pub mod add_user;
+    pub mod bank_account;
     pub mod check_parity;
     pub mod enter_string;
-    pub mod add_user;
     pub mod sum_two_numbers;
-    pub mod bank_account;
     pub mod vehicles;
 }
 
@@ -55,26 +55,13 @@ fn main() {
 
     let choose_input = choose_input.trim();
 
-    if choose_input == "1" {
-        exercises::enter_string::name_input()
+    match choose_input {
+        "1" => exercises::enter_string::name_input(),
+        "2" => exercises::sum_two_numbers::sum_two_numbers(),
+        "3" => exercises::check_parity::check_parity(),
+        "4" => exercises::add_user::add_user(),
+        "5" => exercises::bank_account::bank_account(),
+        "6" => exercises::vehicles::vehicles(),
+        _ => println!("Invalid exercise number!"),
     }
-    if choose_input == "2" {
-        exercises::sum_two_numbers::sum_two_numbers()
-    }
-    if choose_input == "3" {
-        exercises::check_parity::check_parity();
-    }
-    if choose_input == "4" {
-        exercises::add_user::add_user();
-    }
-    if choose_input == "5" {
-        exercises::bank_account::bank_account();
-    } 
-    if choose_input == "6" {
-        exercises::vehicles::vehicles();
-    }
-    else {
-        println!("Invalid exercise number!");
-    }
-
 }

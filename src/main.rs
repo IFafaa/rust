@@ -16,6 +16,7 @@ mod exercises {
     pub mod enter_string;
     pub mod sum_two_numbers;
     pub mod vehicles;
+    pub mod imc_calculator;
 }
 
 static EXERCISES: [&str; 10] = [
@@ -25,7 +26,7 @@ static EXERCISES: [&str; 10] = [
     "Add User",
     "Bank Account",
     "Vehicles",
-    "Doing (don't choose)",
+    "IMC Calculator",
     "Doing (don't choose)",
     "Doing (don't choose)",
     "Doing (don't choose)",
@@ -62,6 +63,7 @@ fn main() {
         "4" => exercises::add_user::add_user(),
         "5" => exercises::bank_account::bank_account(),
         "6" => exercises::vehicles::vehicles(),
+        "7" => exercises::imc_calculator::imc_calculator(),
         _ => println!("Invalid exercise number!"),
     }
 }

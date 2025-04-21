@@ -1,4 +1,4 @@
-use std::io::{self, Read};
+use std::io;
 
 mod immutable;
 mod memory;
@@ -14,9 +14,10 @@ mod exercises {
     pub mod bank_account;
     pub mod check_parity;
     pub mod enter_string;
-    pub mod sum_two_numbers;
-    pub mod vehicles;
     pub mod imc_calculator;
+    pub mod sum_two_numbers;
+    pub mod traffic_light;
+    pub mod vehicles;
 }
 
 static EXERCISES: [&str; 10] = [
@@ -27,7 +28,7 @@ static EXERCISES: [&str; 10] = [
     "Bank Account",
     "Vehicles",
     "IMC Calculator",
-    "Doing (don't choose)",
+    "Traffic Light",
     "Doing (don't choose)",
     "Doing (don't choose)",
 ];
@@ -64,6 +65,7 @@ fn main() {
         "5" => exercises::bank_account::bank_account(),
         "6" => exercises::vehicles::vehicles(),
         "7" => exercises::imc_calculator::imc_calculator(),
+        "8" => exercises::traffic_light::traffic_light(),
         _ => println!("Invalid exercise number!"),
     }
 }

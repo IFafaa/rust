@@ -18,6 +18,7 @@ mod exercises {
     pub mod sum_two_numbers;
     pub mod traffic_light;
     pub mod vehicles;
+    pub mod fizz_buzz;
 }
 
 static EXERCISES: [&str; 10] = [
@@ -29,7 +30,7 @@ static EXERCISES: [&str; 10] = [
     "Vehicles",
     "IMC Calculator",
     "Traffic Light",
-    "Doing (don't choose)",
+    "Fizz Buzz",
     "Doing (don't choose)",
 ];
 
@@ -66,6 +67,7 @@ fn main() {
         "6" => exercises::vehicles::vehicles(),
         "7" => exercises::imc_calculator::imc_calculator(),
         "8" => exercises::traffic_light::traffic_light(),
+        "9" => exercises::fizz_buzz::fizz_buzz(),
         _ => println!("Invalid exercise number!"),
     }
 }

@@ -20,20 +20,21 @@ mod exercises {
     pub mod sum_two_numbers;
     pub mod traffic_light;
     pub mod vehicles;
+    pub mod first_word;
 }
 
 static EXERCISES: [&str; 11] = [
     "Enter your name",
     "Sum two numbers",
-    "Check Parity",
-    "Add User",
-    "Bank Account",
+    "Check parity",
+    "Add user",
+    "Bank account",
     "Vehicles",
-    "IMC Calculator",
-    "Traffic Light",
-    "Fizz Buzz",
+    "IMC calculator",
+    "Traffic light",
+    "Fizz buzz",
     "Little calendar",
-    "Doing (don't choose)",
+    "First word",
 ];
 
 fn main() {
@@ -71,6 +72,7 @@ fn main() {
         "8" => exercises::traffic_light::traffic_light(),
         "9" => exercises::fizz_buzz::fizz_buzz(),
         "10" => exercises::little_calendar::little_calendar(2025),
+        "11" => exercises::first_word::first_word(),
         _ => println!("Invalid exercise number!"),
     }
 }

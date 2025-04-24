@@ -14,14 +14,15 @@ mod exercises {
     pub mod bank_account;
     pub mod check_parity;
     pub mod enter_string;
+    pub mod fizz_buzz;
     pub mod imc_calculator;
+    pub mod little_calendar;
     pub mod sum_two_numbers;
     pub mod traffic_light;
     pub mod vehicles;
-    pub mod fizz_buzz;
 }
 
-static EXERCISES: [&str; 10] = [
+static EXERCISES: [&str; 11] = [
     "Enter your name",
     "Sum two numbers",
     "Check Parity",
@@ -31,6 +32,7 @@ static EXERCISES: [&str; 10] = [
     "IMC Calculator",
     "Traffic Light",
     "Fizz Buzz",
+    "Little calendar",
     "Doing (don't choose)",
 ];
 
@@ -68,6 +70,7 @@ fn main() {
         "7" => exercises::imc_calculator::imc_calculator(),
         "8" => exercises::traffic_light::traffic_light(),
         "9" => exercises::fizz_buzz::fizz_buzz(),
+        "10" => exercises::little_calendar::little_calendar(2025),
         _ => println!("Invalid exercise number!"),
     }
 }

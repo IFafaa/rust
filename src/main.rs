@@ -21,9 +21,10 @@ mod exercises {
     pub mod traffic_light;
     pub mod vehicles;
     pub mod first_word;
+    pub mod rock_paper_scissors;
 }
 
-static EXERCISES: [&str; 11] = [
+static EXERCISES: [&str; 12] = [
     "Enter your name",
     "Sum two numbers",
     "Check parity",
@@ -35,6 +36,7 @@ static EXERCISES: [&str; 11] = [
     "Fizz buzz",
     "Little calendar",
     "First word",
+    "Rock, paper, scissors"
 ];
 
 fn main() {
@@ -73,6 +75,7 @@ fn main() {
         "9" => exercises::fizz_buzz::fizz_buzz(),
         "10" => exercises::little_calendar::little_calendar(2025),
         "11" => exercises::first_word::first_word(),
+        "12" => exercises::rock_paper_scissors::rock_paper_scissors(),
         _ => println!("Invalid exercise number!"),
     }
 }

@@ -1,7 +1,9 @@
 use std::io;
 
+mod collections;
 mod enums;
 mod immutable;
+mod matches;
 mod memory;
 mod primitive_types;
 mod raii;
@@ -11,7 +13,6 @@ mod template_string;
 mod variable_const;
 mod variable_let;
 mod vectors;
-mod collections;
 
 mod exercises {
     pub mod add_user;

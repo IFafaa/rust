@@ -10,6 +10,7 @@ mod structs;
 mod template_string;
 mod variable_const;
 mod variable_let;
+mod vectors;
 
 mod exercises {
     pub mod add_user;

@@ -1,5 +1,6 @@
 use std::io;
 
+mod enums;
 mod immutable;
 mod memory;
 mod primitive_types;

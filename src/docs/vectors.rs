@@ -21,6 +21,15 @@ fn vectors() {
     vector_numbers.remove(1); // remove an element at a specific index
                               //vector_numbers -> [1,10,3,4,5]
 
+    vector_numbers.sort(); // sort the vector in ascending order
+                           //vector_numbers -> [1,3,4,5,10]
+
+    vector_numbers.reverse(); // reverse the order of the vector
+                              //vector_numbers -> [10,5,4,3,1]
+
+    vector_numbers.clear(); // remove all elements from the vector
+                            //vector_numbers -> []
+
     let first_element = vector_numbers[0]; // access an element by index
     println!("First element: {}", first_element);
 
@@ -35,5 +44,38 @@ fn vectors() {
     //we can also use the for loop to iterate over the vector:
     for i in 0..vector_numbers.len() {
         println!("Number: {}", vector_numbers[i]); // access elements by index
+    }
+
+    //we can change the value of all elements in the vector:
+    for i in 0..vector_numbers.len() {
+        //we can also use the for loop to iterate over the vector:
+        vector_numbers[i] = vector_numbers[i] * 2;
+    }
+    //another way
+    for i in vector_numbers.iter_mut() {
+        *i = *i * 2; // access elements by index
+    }
+
+    //we can save other type values in the vector:
+    struct Person {
+        name: String,
+        age: u32,
+    }
+    let mut vector_people: Vec<Person> = Vec::new(); // create an empty vector of Person structs
+    vector_people.push(Person {
+        name: String::from("John"),
+        age: 30,
+    });
+    vector_people.push(Person {
+        name: String::from("Jane"),
+        age: 25,
+    });
+    vector_people.push(Person {
+        name: String::from("Bob"),
+        age: 40,
+    });
+
+    for person in &vector_people {
+        println!("Name: {}, Age: {}", person.name, person.age); // iterate over the vector of structs
     }
 }

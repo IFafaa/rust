@@ -75,7 +75,16 @@ fn vectors() {
         age: 40,
     });
 
-    for person in &vector_people {
-        println!("Name: {}, Age: {}", person.name, person.age); // iterate over the vector of structs
+    {
+        for person in &vector_people {
+            println!("Name: {}, Age: {}", person.name, person.age); // iterate over the vector of structs
+        }
+        //other way
+        for i in 0..vector_people.len() {
+            println!(
+                "Name: {}, Age: {}",
+                vector_people[i].name, vector_people[i].age
+            ); // access elements by index
+        }
     }
 }

@@ -12,3 +12,4 @@ pub mod template_string;
 pub mod variable_const;
 pub mod variable_let;
 pub mod vectors;
+pub mod traits;

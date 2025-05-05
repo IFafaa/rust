@@ -43,6 +43,7 @@ fn main() {
         "11" => exercises::first_word::first_word(),
         "12" => exercises::rock_paper_scissors::rock_paper_scissors(),
         "13" => exercises::geometric_calculator::geometric_calculator(),
+        "14" => exercises::create_file_if_not_exist::create_file_if_not_exist(),
         _ => println!("Invalid exercise number!"),
     }
 }

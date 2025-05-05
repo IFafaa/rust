@@ -1,6 +1,7 @@
 pub mod add_user;
 pub mod bank_account;
 pub mod check_parity;
+pub mod create_file_if_not_exist;
 pub mod enter_string;
 pub mod first_word;
 pub mod fizz_buzz;
@@ -12,7 +13,7 @@ pub mod sum_two_numbers;
 pub mod traffic_light;
 pub mod vehicles;
 
-pub static EXERCISES: [&str; 13] = [
+pub static EXERCISES: [&str; 14] = [
     "Enter your name",
     "Sum two numbers",
     "Check parity",
@@ -26,4 +27,5 @@ pub static EXERCISES: [&str; 13] = [
     "First word",
     "Rock, paper, scissors",
     "Geometric calculator",
+    "Create file if not exist",
 ];

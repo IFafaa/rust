@@ -15,3 +15,4 @@ pub mod variable_const;
 pub mod variable_let;
 pub mod vectors;
 pub mod unwrap_and_expect;
+pub mod panic;
